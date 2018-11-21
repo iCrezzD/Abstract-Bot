@@ -15,10 +15,12 @@ bot.on("message", async message => {
     let messageArray = message.content.split(" ");
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
- 
-     
- 
- if(cmd === `${prefix}serverinfo`){
+
+    if(cmd === `${prefix}hello`){
+        return message.channel.send("Hello!")
+    }
+
+    if(cmd === `${prefix}serverinfo`){
 
         let serverembed = new Discord.RichEmbed()
         .setDescription("Server Information")
@@ -28,7 +30,7 @@ bot.on("message", async message => {
     
         return message.channel.send(serverembed);
     }
- 
+
 });
 
 bot.login(process.env.BOT_TOKEN);
