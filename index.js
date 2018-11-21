@@ -1,10 +1,10 @@
 const Discord = require("discord.js");
 
-const client = new Discord.Client({disableEveryone: true});
+const bot = new Discord.Client({disableEveryone: true});
 const prefix = "!";
  
-client.on("ready", async () => {
-    console.log('I am ready!');
+bot.on("ready", async () => {
+    console.log(`${bot.user.username} is online!`);
 });
 
 bot.on("message", async message => {
@@ -31,4 +31,4 @@ bot.on("message", async message => {
  
 });
 
-client.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
