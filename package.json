@@ -1,16 +1,16 @@
 {
 
-  "name": "Test",
+  "name": "Abstract-Bot",
 
-  "description": "Test",
+  "description": ".",
 
-  "version": "0.0.0",
+  "version": "0.0.1",
 
-  "main": "bot.js",
+  "main": "index.js",
 
   "scripts": {
 
-    "start": "node bot.js"
+    "start": "node index.js"
 
   },
 
