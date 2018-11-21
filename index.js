@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const prefix = "!";
-const client = new Discord.Client();
+const client = new Discord.Client({disableEveryone: true});
 
 
- client.on('ready', () => {
-    console.log('I am ready!');
+ client.on("ready", async () => {
+    console.log(`${client.user.username} is online!`);
 });
 
 if(cmd === `${prefix}serverinfo`){
