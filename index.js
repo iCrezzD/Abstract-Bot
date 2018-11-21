@@ -13,8 +13,11 @@ client.on('message', message => {
     if (message.content === 'ping') {
        message.reply('pong');
 
-       }
-
+    }
+if(cmd === `${prefix}hello`){
+        return message.channel.send("Hello!")
+    }
+ 
 });
 
 client.login(process.env.BOT_TOKEN);
