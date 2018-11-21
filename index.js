@@ -16,7 +16,18 @@ bot.on("message", async message => {
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
  
+     
  
+ if(cmd === `${prefix}serverinfo`){
+
+        let serverembed = new Discord.RichEmbed()
+        .setDescription("Server Information")
+        .setColor("#009dff")
+        .addField("Server Name", message.guild.name)
+        .addField("Total Members", message.guild.memberCount);
+    
+        return message.channel.send(serverembed);
+    }
  
 });
 
