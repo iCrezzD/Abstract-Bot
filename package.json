@@ -1,14 +1,13 @@
 {
-  "name": "abstract",
-  "version": "1.0.0",
-  "description": "discord bot",
+  "name": "Abstract",
+  "description": "",
+  "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.4.2"
+    "discord.js": "11.1.0",
+    "request": "2.81.0"
   }
 }
