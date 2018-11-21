@@ -1,9 +1,7 @@
-const botconfig = require("./botconfig.json");
 const Discord = require('discord.js');
-
+const prefix = "!";
 const client = new Discord.Client();
 
-   "prefix": "!"
 
  client.on('ready', () => {
     console.log('I am ready!');
