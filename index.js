@@ -8,6 +8,14 @@ bot.on("ready", async () => {
     console.log(`${bot.user.username} is online!`);
 });
 
+client.on('message', message => {
+
+    if (message.content === 'ping') {
+
+       message.reply('pong');
+
+       }
+
 bot.on("message", async message => {
     if(message.author.bot) return;
     if(message.channel.type ==="dm") return;
