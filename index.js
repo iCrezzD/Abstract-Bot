@@ -18,7 +18,7 @@ client.on('message', message => {
   }
 
 
-  if(message.content === `!serverinfo`){
+  if(message.content === '!serverinfo'){
 
     function checkBots(guild) {
       let botCount = 0; 
@@ -39,10 +39,10 @@ client.on('message', message => {
     let serverembed = new Discord.RichEmbed()
     .setColor("#99AAB5")
     .addField("You Joined", message.member.joinedAt)
-    .addField('Humans', checkMembers(message.guild), true)
-    .addField('Bots', checkBots(message.guild), true)
+    .addField("Humans", checkMembers(message.guild), true)
+    .addField("Bots", checkBots(message.guild), true)
     .addField("Total Members", message.guild.memberCount)
-    .setFooter('Server created at:')
+    .setFooter("Server created at:")
     .setTimestamp(message.guild.createdAt);
 
     return message.channel.send(serverembed);
