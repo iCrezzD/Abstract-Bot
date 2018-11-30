@@ -14,9 +14,10 @@ client.on('message', message => {
 
 
   if (message.content === '!ping') {
-     message.reply('pong');
+      message.reply(' The ping is `' + `${message.createdTimestamp - Date.now()}` + ' ms`');
 
   }
+
 
 
   if(message.content === '!serverinfo'){
