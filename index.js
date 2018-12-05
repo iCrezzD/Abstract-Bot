@@ -7,7 +7,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
   console.log('I am ready!');
   
-    client.user.setActivity(` ${client.guilds.size} servers`, { type: 'WATCHING' });
+    client.user.setActivity(` ${client.users.size} members`, { type: 'WATCHING' });
 });
 
 client.on('message', message => {
