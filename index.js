@@ -50,7 +50,24 @@ client.on('message', message => {
     return message.channel.send(serverembed);
   }
 
+  
+  
+    if(message.content === '!help'){
 
+    let serverembed = new Discord.RichEmbed()
+    .setColor("#99AAB5")
+    .addField("!ping", "Checks the bot's response time to Discord.", true)
+    .addBlankField(true)
+    .addField("!serverinfo", "Shows all important info about your server.", true);
+
+    return message.channel.send(serverembed);
+  }
+
+  
+  
+  
+  
+  
 });
 
 
