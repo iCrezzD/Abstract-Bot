@@ -56,7 +56,7 @@ client.on('message', message => {
   
   
   
-  if(cmd === `${prefix}report`){
+  if(message.content === '!report'){
 
       //!report @abstract this is the reason
 
