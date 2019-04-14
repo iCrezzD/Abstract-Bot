@@ -71,7 +71,7 @@ client.on('message', message => {
       .addField("Reported By", `${message.author} with ID: ${message.author.id}`)
       .addField("Channel", message.channel)
       .addField("Time", message.createdAt)
-      .addField("Reason", rreason);
+      .addField("Reason", reason);
 
       let reportschannel = message.guild.channels.find(`name`, "reports");
       if(!reportschannel) return message.channel.send("Couldn't find reports channel.");
