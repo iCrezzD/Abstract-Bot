@@ -18,6 +18,7 @@ module.exports.run = async (bot, message, args) => {
   }
 
   let serverembed = new Discord.RichEmbed()
+  .setDescription("Server Information")
   .setColor("#99AAB5")
   .addField("You Joined", message.member.joinedAt)
   .addField("Humans", checkMembers(message.guild), true)
