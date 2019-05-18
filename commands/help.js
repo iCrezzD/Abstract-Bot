@@ -8,7 +8,8 @@ module.exports.run = async (bot, message, args) => {
   .addField("!help", "Shows info about commands.")
   .addField("!ping", "Checks the bot's response time to Discord.")
   .addField("!serverinfo", "Shows info about the server")
-  .addField("!report (user) (reason)", "Reports user to reports channel.");
+  .addField("!report (user) (reason)", "Reports user to reports channel.")
+  .addField("!clear (number)", "Clears 2-100 messages from channel.");
 
   message.channel.send(helpembed);
 }
