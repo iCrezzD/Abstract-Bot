@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
+  
   if(!message.member.roles.some(r=>["Administrators", "Moderators"].includes(r.name)) )
     return message.reply("Sorry, you don't have permissions to use this!");
 
